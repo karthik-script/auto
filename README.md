@@ -1,6 +1,6 @@
-# Mouse Sine Wave Automation
+# StayAwake
 
-This project leverages the `robotjs` library to automate mouse movement in a sine wave pattern across the screen. Additionally, the script runs until the current time (in PST/PDT) surpasses 5:15 PM, making it suitable for automation tasks that require time-sensitive termination.
+This project leverages the `robotjs` library to automate mouse movement in a sine wave pattern across the screen. Additionally, the script runs until the current time (in PST/PDT) surpasses 5:15 PM by default, making it suitable for automation tasks that require time-sensitive termination.
 
 ## Features
 
@@ -17,19 +17,13 @@ This project leverages the `robotjs` library to automate mouse movement in a sin
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone 
-```
+1. Clone the repository
 
-2. Navigate to the project folder:
-```bash
-cd 
-```
+2. Navigate to the project folder
 
 3. Install the required dependencies:
 ```bash
-npm install robotjs date-fns date-fns-tz
+npm install
 ```
 
 ## Usage
