@@ -1,50 +1,61 @@
-Mouse Sine Wave Automation
+# Mouse Sine Wave Automation
 
-This project leverages the robotjs library to automate mouse movement in a sine wave pattern across the screen. Additionally, the script runs until the current time (in PST/PDT) surpasses 5:15 PM, making it suitable for automation tasks that require time-sensitive termination.
+This project leverages the `robotjs` library to automate mouse movement in a sine wave pattern across the screen. Additionally, the script runs until the current time (in PST/PDT) surpasses 5:15 PM, making it suitable for automation tasks that require time-sensitive termination.
 
-Features
+## Features
 
-	•	Moves the mouse in a smooth sine wave pattern across the screen.
-	•	Automatically stops the script if the current time is after 5:15 PM PST/PDT.
-	•	Simulates key taps (right shift) to prevent the computer from going to sleep during execution.
+- Moves the mouse in a smooth sine wave pattern across the screen.
+- Automatically stops the script if the current time is after 5:15 PM PST/PDT.
+- Simulates key taps (right shift) to prevent the computer from going to sleep during execution.
 
-Prerequisites
+## Prerequisites
 
-	•	Node.js: Ensure Node.js is installed on your machine. It can be downloaded from the official website.
-	•	robotjs: A library that facilitates mouse and keyboard control.
-	•	date-fns: Used for working with date and time functions.
-	•	date-fns-tz: Helps with time zone handling.
+- **Node.js**: Ensure Node.js is installed on your machine. It can be downloaded from the official website.
+- **robotjs**: A library that facilitates mouse and keyboard control.
+- **date-fns**: Used for working with date and time functions.
+- **date-fns-tz**: Helps with time zone handling.
 
-Installation
+## Installation
 
-	1.	Clone the repository:
-git clone <repository-url>
-Navigate to the project folder:
-cd <repository-folder>
-	2.	Install the required dependencies:
+1. Clone the repository:
+```bash
+git clone 
+```
+
+2. Navigate to the project folder:
+```bash
+cd 
+```
+
+3. Install the required dependencies:
+```bash
 npm install robotjs date-fns date-fns-tz
+```
 
-Usage
+## Usage
 
-	1.	Run the project using:
+1. Run the project using:
+```bash
 node index.js
-	2.	The program will start moving the mouse in a sine wave pattern and simulate key taps every 5 seconds to prevent the system from going idle.
-	3.	The program will automatically stop once the time is later than 5:15 PM PST/PDT.
+```
 
-How It Works
+2. The program will start moving the mouse in a sine wave pattern and simulate key taps every 5 seconds to prevent the system from going idle.
 
-	•	The program uses robotjs to move the mouse in a sine wave pattern across the screen.
-	•	The isTimeGreaterThan5PMPST function checks if the current time (in PST/PDT) is greater than 5:15 PM.
-	•	The program runs in a continuous loop, moving the mouse and sending right-shift key taps every 5 seconds.
+3. The program will automatically stop once the time is later than 5:15 PM PST/PDT.
 
-Customization
+## How It Works
 
-	•	To adjust the time, modify the isTimeGreaterThan5PMPST function.
-	•	Alter the sine wave movement or speed by changing the logic inside the loop of the init function.
-	•	Customize the key tap action (right_shift) to simulate different keys if required.
+- The program uses `robotjs` to move the mouse in a sine wave pattern across the screen.
+- The `isTimeGreaterThan5PMPST` function checks if the current time (in PST/PDT) is greater than 5:15 PM.
+- The program runs in a continuous loop, moving the mouse and sending right-shift key taps every 5 seconds.
 
-License
+## Customization
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+- To adjust the time, modify the `isTimeGreaterThan5PMPST` function.
+- Alter the sine wave movement or speed by changing the logic inside the loop of the `init` function.
+- Customize the key tap action (`right_shift`) to simulate different keys if required.
 
-This markdown preserves formatting for clarity while avoiding explicit code blocks. Just replace <repository-url> and <repository-folder> with your actual project details.
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
